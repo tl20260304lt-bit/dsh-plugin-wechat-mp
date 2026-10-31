@@ -32,6 +32,16 @@ dsh plugin --profile desktop add dsh-plugin-wechat-mp
 
 `dsh plugin` appends the bundle to `dsh.profile.bundles` automatically. Alternatively, use the **Plugins** page in the Web UI (sidebar → Plugins) and install from a path or package name.
 
+### Market index
+
+DSH's **Plugins → Discover** reads plugin-market indexes (format 1). This repository publishes one:
+
+```
+https://tl20260304lt-bit.github.io/dsh-plugin-wechat-mp/market/index.json
+```
+
+Open **Plugins → Discover → Add index source**, paste that URL, and the entry installs `dsh-plugin-wechat-mp@<version>` from npm. After a release, regenerate and check it with `npm run market:build && npm run market:check`.
+
 After the profile loads, the two skills appear in the agent's skill catalog. With HMR enabled in the profile — the default for `dsh-base` profiles — the catalog updates **without restarting**: the new skills are visible in the very next turn. Otherwise restart the app.
 
 Verify:

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Build the format-1 plugin-market index consumed by DSH's Plugins → Discover tab.
  *
  * The index is regenerated from package.json, so bumping the version only needs
@@ -71,7 +71,7 @@ const index = {
         en: 'Read an article and its 留言/comments with the live WeChat session, and archive a whole 公众号 into an indexed local corpus.',
         zh: '用微信客户端的实时会话读取文章与留言，并把整个公众号存档成带索引的本地语料库。',
       },
-      icon: './icon.svg',
+      icon: '../icon.svg',
       author: 'TaoLiu',
       ...(pkg.homepage === undefined ? {} : { homepage: pkg.homepage }),
       ...(repository === undefined ? {} : { repository: { url: repository } }),

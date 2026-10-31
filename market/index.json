@@ -49,7 +49,7 @@
         "en": "Read an article and its 留言/comments with the live WeChat session, and archive a whole 公众号 into an indexed local corpus.",
         "zh": "用微信客户端的实时会话读取文章与留言，并把整个公众号存档成带索引的本地语料库。"
       },
-      "icon": "./icon.svg",
+      "icon": "../icon.svg",
       "author": "TaoLiu",
       "homepage": "https://github.com/tl20260304lt-bit/dsh-plugin-wechat-mp#readme",
       "repository": {
@@ -78,7 +78,7 @@
       "versions": [
         {
           "version": "0.1.0",
-          "publishTimestamp": 1793430033,
+          "publishTimestamp": 1793430328,
           "source": {
             "type": "npm"
           }

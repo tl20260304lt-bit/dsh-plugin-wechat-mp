@@ -32,6 +32,16 @@ dsh plugin --profile desktop add dsh-plugin-wechat-mp
 
 `dsh plugin` 会自动把该 bundle 追加到 `dsh.profile.bundles`。也可以走 Web 界面：侧边栏 → **Plugins** → 按路径或包名安装。
 
+### 插件市场索引
+
+DSH 的 **Plugins → Discover** 读的是「插件市场索引」（format 1）。本仓库已经发布了一个：
+
+```
+https://tl20260304lt-bit.github.io/dsh-plugin-wechat-mp/market/index.json
+```
+
+在 **Plugins → Discover → Add index source** 里粘这条 URL，就能直接安装 `dsh-plugin-wechat-mp@<版本>`（走 npm）。每次发版后重新生成并自检：`npm run market:build && npm run market:check`。
+
 profile 加载后，两个技能就出现在 Agent 的技能目录里。`dsh-base` 系列 profile 默认开启 HMR，因此**通常不需要重启**——下一轮对话即可见；若未开启，重启应用生效。
 
 自检：
