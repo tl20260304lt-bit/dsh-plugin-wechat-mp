@@ -1,0 +1,7 @@
+# dsh-plugin-wechat-mp — bundle patch: insert the bundled skill provider row.
+#
+# The plugin holds no state and needs no options: it reads the SKILL.md trees
+# under ./assets/skills/ on demand and registers them on `ctx.skills`.
+- insert:
+    - id: skill-wechat-mp
+      name: 'dsh-plugin-wechat-mp'

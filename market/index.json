@@ -1,0 +1,89 @@
+{
+  "format": 1,
+  "title": {
+    "en": "WeChat & Chinese content tools for DSH",
+    "zh": "DSH 公众号与中文内容工具"
+  },
+  "description": {
+    "en": "Community plugins that give DeepSeek Harness access to WeChat official-account content: article bodies, 留言/comments, and local archives.",
+    "zh": "给 DeepSeek Harness 补上微信公众号能力的社区插件：正文、留言、本地存档。"
+  },
+  "metadata": {
+    "categories": {
+      "content": {
+        "title": {
+          "en": "Content & publishing",
+          "zh": "内容与发布"
+        }
+      }
+    },
+    "labels": {
+      "windows": {
+        "title": {
+          "en": "Windows only",
+          "zh": "仅 Windows"
+        }
+      },
+      "skills": {
+        "title": {
+          "en": "Bundled skills",
+          "zh": "纯技能包"
+        }
+      },
+      "wechat": {
+        "title": {
+          "en": "WeChat",
+          "zh": "微信"
+        }
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-plugin-wechat-mp",
+      "title": {
+        "en": "WeChat official-account skills",
+        "zh": "公众号工具箱"
+      },
+      "description": {
+        "en": "Read an article and its 留言/comments with the live WeChat session, and archive a whole 公众号 into an indexed local corpus.",
+        "zh": "用微信客户端的实时会话读取文章与留言，并把整个公众号存档成带索引的本地语料库。"
+      },
+      "icon": "./icon.svg",
+      "author": "TaoLiu",
+      "homepage": "https://github.com/tl20260304lt-bit/dsh-plugin-wechat-mp#readme",
+      "repository": {
+        "url": "https://github.com/tl20260304lt-bit/dsh-plugin-wechat-mp"
+      },
+      "metadata": {
+        "category": "content",
+        "keywords": [
+          "dsh",
+          "dsh-plugin",
+          "deepseek-harness",
+          "cordis",
+          "skill",
+          "wechat",
+          "weixin",
+          "公众号",
+          "mp.weixin.qq.com",
+          "corpus"
+        ],
+        "labels": [
+          "windows",
+          "skills",
+          "wechat"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1793430033,
+          "source": {
+            "type": "npm"
+          }
+        }
+      ]
+    }
+  ]
+}

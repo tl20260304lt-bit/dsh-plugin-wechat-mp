@@ -1,0 +1,17 @@
+# npm
+node_modules/
+*.tgz
+
+# local DSH test homes
+.e2e-dsh/
+.dsh-test/
+
+# editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# python
+__pycache__/
+*.pyc

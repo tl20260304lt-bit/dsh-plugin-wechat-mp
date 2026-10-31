@@ -1,0 +1,71 @@
+{
+  "name": "dsh-plugin-wechat-mp",
+  "version": "0.1.0",
+  "description": "WeChat official-account (公众号) skills for DeepSeek Harness: read an article's 留言/comments with the live WeChat session, and archive a whole account locally from Share Data.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "skill",
+    "wechat",
+    "weixin",
+    "公众号",
+    "mp.weixin.qq.com",
+    "corpus"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "TaoLiu",
+    "email": "taoliu@ntsc.ac.cn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tl20260304lt-bit/dsh-plugin-wechat-mp.git"
+  },
+  "homepage": "https://github.com/tl20260304lt-bit/dsh-plugin-wechat-mp#readme",
+  "bugs": {
+    "url": "https://github.com/tl20260304lt-bit/dsh-plugin-wechat-mp/issues"
+  },
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "assets",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "README.zh.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test",
+    "test:py": "python -m unittest discover -s test -p \"test_*.py\"",
+    "market:build": "node scripts/build-market-index.mjs",
+    "market:check": "node scripts/validate-market-index.mjs",
+    "pack:verify": "node scripts/verify-pack.mjs",
+    "prepublishOnly": "npm test && npm run pack:verify && npm run market:check"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
